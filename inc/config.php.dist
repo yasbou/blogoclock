@@ -1,0 +1,14 @@
+<?php
+// Exemple de fichier de configuration
+
+// Définition d'une constante, accessible partout dans l'application
+// ATTENTION SANS LE SLASH / final !!!
+define('BASE_URL', '/discovery/Jour41/s8-challenge-blog-final-jordanbouvier');
+
+// Configuration d'accès à la base de donnéees
+$dbConfig = [
+  'dbhost' => 'localhost',
+  'dbname' => 'votre_bdd',
+  'dbuser' => 'votre_user',
+  'dbpass' => 'votre_pass',
+];

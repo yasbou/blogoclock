@@ -1,0 +1,168 @@
+/* global */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #333;
+}
+
+    a:focus, a:hover {
+        color: #555;
+        text-decoration: none;
+    }
+
+/* nav + header */
+
+nav {
+    font-weight: 800;
+}
+
+    nav .navbar-brand {
+        color: #777;
+        font-size: 18px;
+    }
+
+    nav .navbar-nav a {
+        color: #777;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+header {
+    background-image: url(../images/home-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    color: white;
+
+    margin-bottom: 50px;
+
+    /*padding-top: 70px;
+    padding-bottom: 35px;*/
+
+    text-align: center;
+
+}
+    header h1 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    header hr {
+        border-width: 4px;
+        width: 100px;
+    }
+
+    header span {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+/* posts */
+
+.post-preview h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.post-preview h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.post-preview p {
+    color: #777;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+    .post-preview p a {
+        color: #333;
+    }
+
+    .post-preview p.text {
+        color: #333;
+        font-style: normal;
+        font-size: 18px;
+        margin: 1em 0;
+    }
+
+.category-title h2 {
+    color: gray;
+    border-bottom: 1px solid gray;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+/* à partir de sm */
+
+@media(min-width: 768px) {
+
+    /* on redéfinit en blanc navbar-brand et les menus de droite */
+    .navbar-default .navbar-nav>li>a,
+    .navbar-default .navbar-brand {
+        color: white;
+    }
+
+    /* on redéfinit en blanc les :hover de navbar-brand et les menus de droite */
+    .navbar-default .navbar-nav>li>a:focus,
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-brand:focus,
+    .navbar-default .navbar-brand:hover {
+        color: lightgrey;
+    }
+
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    header {
+        margin-bottom: 25px;
+        /*padding: 150px 0;*/
+        padding: 35px 0;
+    }
+
+    header h1 {
+        font-size: 80px;
+    }
+
+    .category-title h2 {
+        font-size: 40px;
+    }
+
+    .post-preview h2 {
+        font-size: 36px;
+    }
+
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+    footer .fa {
+        color: white;
+        background: #333;
+        border-radius: 50%;
+        font-size: 28px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 10px;
+    }
+
+    footer p {
+        color: #777;
+        font-size: 14px;
+        margin: 30px 0;
+    }
